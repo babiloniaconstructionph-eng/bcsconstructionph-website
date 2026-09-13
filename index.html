@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Babilonia Construction Services | BCS Construction</title>
+
+<meta name="description" content="Babilonia Construction Services - Construction, waterproofing, renovation, epoxy flooring and design-build services in Metro Manila.">
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+  line-height: 1.6;
+  background: #fff;
+}
+
+header {
+  background: #111;
+  color: #fff;
+  padding: 18px 6%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.logo span {
+  color: #f58220;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.hero {
+  background: linear-gradient(rgba(0,0,0,.68),rgba(0,0,0,.68)),
+  url("https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1800&q=80");
+  background-size: cover;
+  background-position: center;
+  min-height: 650px;
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 70px 6%;
+}
+
+.hero-content {
+  max-width: 800px;
+}
+
+.hero h1 {
+  font-size: clamp(40px, 7vw, 72px);
+  line-height: 1.05;
+  margin-bottom: 20px;
+}
+
+.hero h1 span {
+  color: #f58220;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  max-width: 680px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 25px;
+  background: #f58220;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.btn.dark {
+  background: white;
+  color: #111;
+}
+
+section {
+  padding: 75px 6%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.section-title h2 {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+.section-title p {
+  color: #666;
+}
+
+.about {
+  background: #f6f6f6;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 45px;
+  align-items: center;
+}
+
+.about h2 {
+  font-size: 40px;
+  margin-bottom: 18px;
+}
+
+.about strong {
+  color: #f58220;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 22px;
+}
+
+.card {
+  background: white;
+  padding: 30px 25px;
+  border-radius: 8px;
+  box-shadow: 0 5px 25px rgba(0,0,0,.08);
+  border-top: 4px solid #f58220;
+}
+
+.card .icon {
+  font-size: 38px;
+  margin-bottom: 12px;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.projects {
+  background: #111;
+  color: white;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+}
+
+.project {
+  min-height: 230px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+}
+
+.project div {
+  width: 100%;
+  padding: 25px;
+  background: linear-gradient(transparent,rgba(0,0,0,.9));
+}
+
+.project h3 {
+  font-size: 22px;
+}
+
+.cta {
+  text-align: center;
+  background: #f58220;
+  color: white;
+}
+
+.cta h2 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.cta .btn {
+  background: #111;
+}
+
+.contact {
+  background: #f5f5f5;
+}
+
+.contact-box {
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 5px 25px rgba(0,0,0,.08);
+  text-align: center;
+}
+
+.contact-box p {
+  margin: 12px 0;
+  font-size: 18px;
+}
+
+footer {
+  background: #111;
+  color: #aaa;
+  text-align: center;
+  padding: 30px 6%;
+}
+
+footer strong {
+  color: white;
+}
+
+@media(max-width:800px) {
+  nav {
+    display: none;
+  }
+
+  .hero {
+    min-height: 570px;
+  }
+
+  .about-grid,
+  .services-grid,
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  section {
+    padding: 55px 5%;
+  }
+
+  .hero p {
+    font-size: 17px;
+  }
+
+  .cta h2 {
+    font-size: 30px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav">
+    <div class="logo">
+      <span>BCS</span> BABILONIA CONSTRUCTION
+    </div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-content">
+    <h1>Building With <span>Quality.</span><br>Built To Last.</h1>
+
+    <p>
+      Babilonia Construction Services provides professional
+      construction, waterproofing, renovation, flooring and
+      design-build solutions.
+    </p>
+
+    <a class="btn" href="#contact">Request a Quote</a>
+    <a class="btn dark" href="#services">Our Services</a>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="container about-grid">
+
+    <div>
+      <h2>About <strong>BCS</strong></h2>
+
+      <p>
+        <strong>Babilonia Construction Services</strong>
+        is committed to providing dependable construction
+        solutions with quality workmanship, professional
+        management and attention to detail.
+      </p>
+
+      <br>
+
+      <p>
+        From repairs and waterproofing to renovation and
+        design-build projects, our goal is to deliver
+        practical, durable and professional results for
+        every client.
+      </p>
+
+      <br>
+
+      <p><strong>CONTINUING THE SERVICE SINCE 1965</strong></p>
+    </div>
+
+    <div>
+      <h2>Professional.<br>Reliable.<br>Built For You.</h2>
+      <p>
+        We work with residential, commercial and industrial
+        clients throughout Metro Manila and nearby areas.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Our Services</h2>
+      <p>Complete construction solutions for your project.</p>
+    </div>
+
+    <div class="services-grid">
+
+      <div class="card">
+        <div class="icon">🏗️</div>
+        <h3>Construction</h3>
+        <p>
+          General construction, structural works,
+          extensions and building improvements.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">💧</div>
+        <h3>Waterproofing</h3>
+        <p>
+          Professional waterproofing and repair works
+          for roofs, facades, decks and concrete structures.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🏠</div>
+        <h3>Renovation</h3>
+        <p>
+          Residential and commercial renovation,
+          remodeling and improvement works.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">✨</div>
+        <h3>Epoxy Flooring</h3>
+        <p>
+          Durable epoxy flooring systems for residential,
+          commercial and industrial applications.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">📐</div>
+        <h3>Design & Build</h3>
+        <p>
+          From planning and design to construction and
+          project completion.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🔧</div>
+        <h3>Repair & Maintenance</h3>
+        <p>
+          Building repairs, concrete restoration,
+          maintenance and improvement works.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="projects" id="projects">
+
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Our Projects</h2>
+      <p style="color:#ccc;">
+        Quality workmanship for every project.
+      </p>
+    </div>
+
+    <div class="project-grid">
+
+      <div class="project"
+      style="background-image:url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1000&q=80');">
+        <div>
+          <h3>Commercial Construction</h3>
+          <p>Professional building works</p>
+        </div>
+      </div>
+
+      <div class="project"
+      style="background-image:url('https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=1000&q=80');">
+        <div>
+          <h3>Waterproofing Works</h3>
+          <p>Protection and restoration</p>
+        </div>
+      </div>
+
+      <div class="project"
+      style="background-image:url('https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1000&q=80');">
+        <div>
+          <h3>Residential Projects</h3>
+          <p>Renovation and construction</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="cta">
+
+  <div class="container">
+
+    <h2>Have a Construction Project?</h2>
+
+    <p>
+      Let BCS help turn your plans into reality.
+    </p>
+
+    <br>
+
+    <a class="btn" href="#contact">Contact BCS Today</a>
+
+  </div>
+
+</section>
+
+<section class="contact" id="contact">
+
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Contact BCS</h2>
+      <p>Request a quotation for your project.</p>
+    </div>
+
+    <div class="contact-box">
+
+      <h2>Babilonia Construction Services</h2>
+
+      <p>📍 Metro Manila, Philippines</p>
+
+      <p>🏗️ Construction • Waterproofing • Renovation</p>
+
+      <p>📐 Design & Build • Epoxy Flooring • Repairs</p>
+
+      <br>
+
+      <p>
+        <strong>Email:</strong>
+        sales_inquiry@bcsconstructionph.com
+      </p>
+
+      <br>
+
+      <a class="btn"
+         href="mailto:sales_inquiry@bcsconstructionph.com">
+         Send Us an Email
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<footer>
+
+  <p>
+    © 2026 <strong>Babilonia Construction Services</strong>.
+    All Rights Reserved.
+  </p>
+
+  <p>
+    Continuing the Service Since 1965
+  </p>
+
+</footer>
+
+</body>
+                                                 </html>
