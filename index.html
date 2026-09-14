@@ -1,111 +1,211 @@
 <!DOCTYPE html>
-<h3>Construction</h3><html lang="en">
-<head><h3>General Construction</h3>
+<html lang="en">
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Babilonia Construction Services | BCS Construction</title>
-
-<meta name="description" content="Babilonia Construction Services - Construction, waterproofing, renovation, epoxy flooring and design-build services in Metro Manila.">
-
+<meta name="description" content="Babilonia Construction Services (BCS) — construction, roofing, waterproofing, renovation, painting, glass and aluminum, fabrication and third-party pre-turnover inspection services. Serving Metro Manila and CALABARZON.">
+<meta name="theme-color" content="#111111">
 <style>
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+:root{--orange:#f47721;--dark:#111;--light:#f7f7f7;--gray:#666}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:#222;line-height:1.6;background:#fff}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:#111;box-shadow:0 2px 12px #0004}
+.nav{min-height:74px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{height:54px;width:auto;object-fit:contain;background:#111}
+nav{display:flex;gap:22px;align-items:center}
+nav a{color:#fff;font-weight:700;font-size:14px}
+nav a:hover{color:var(--orange)}
+.menu{display:none;color:#fff;font-size:28px;background:none;border:0}
+.hero{background:linear-gradient(110deg,#111 0%,#181818 58%,#242424 100%);color:#fff;padding:80px 0}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:45px;align-items:center}
+.badge{display:inline-block;background:var(--orange);padding:7px 14px;border-radius:30px;font-weight:800;font-size:12px;letter-spacing:.5px}
+h1{font-size:clamp(38px,6vw,68px);line-height:1.02;margin:18px 0}
+h1 span,.orange{color:var(--orange)}
+.hero p{font-size:18px;color:#ddd;max-width:650px}
+.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-block;padding:13px 21px;border-radius:7px;font-weight:800;border:2px solid var(--orange)}
+.btn.primary{background:var(--orange);color:#111}
+.btn.secondary{color:#fff}
+.hero-card{background:#fff;color:#111;border-radius:18px;padding:30px;box-shadow:0 20px 50px #0006}
+.hero-card img{width:100%;max-height:180px;object-fit:contain;background:#111;border-radius:10px}
+.hero-card h3{font-size:24px;margin:18px 0 8px}
+section{padding:72px 0}
+.section-head{text-align:center;margin-bottom:38px}
+.section-head h2{font-size:36px;line-height:1.1}
+.section-head p{color:var(--gray);max-width:700px;margin:10px auto}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:#fff;border:1px solid #e6e6e6;border-radius:14px;padding:25px;box-shadow:0 7px 24px #0000000d}
+.card:hover{transform:translateY(-3px);transition:.2s}
+.icon{font-size:30px;margin-bottom:10px}
+.card h3{margin-bottom:8px}
+.card p{color:var(--gray);font-size:14px}
+.light{background:var(--light)}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
+.about-box{background:#111;color:#fff;padding:35px;border-radius:18px}
+.about-box strong{color:var(--orange)}
+.list{list-style:none;margin-top:18px}
+.list li{margin:9px 0}.list li:before{content:"✓";color:var(--orange);font-weight:900;margin-right:10px}
+.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.project{min-height:190px;border-radius:14px;background:linear-gradient(135deg,#222,#555);display:flex;align-items:end;padding:20px;color:#fff;font-weight:800;position:relative;overflow:hidden}
+.project small{display:block;color:#ddd;font-weight:400}
+.cta{background:var(--orange);padding:55px 0}
+.cta-inner{display:flex;justify-content:space-between;align-items:center;gap:25px}
+.cta h2{font-size:34px;line-height:1.1}
+.cta .btn{border-color:#111;background:#111;color:#fff}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.contact-card{background:#111;color:#fff;border-radius:16px;padding:30px}
+.contact-card a{color:var(--orange);font-weight:800}
+footer{background:#0b0b0b;color:#aaa;padding:35px 0;text-align:center;font-size:13px}
+footer strong{color:#fff}
+.note{font-size:12px;color:#777;margin-top:20px}
+@media(max-width:800px){
+nav{display:none}.menu{display:block}
+.hero{padding:55px 0}.hero-grid,.about,.contact{grid-template-columns:1fr}
+.grid,.projects{grid-template-columns:1fr 1fr}
+.cta-inner{flex-direction:column;text-align:center}
 }
-
-html {
-  scroll-behavior: smooth;
+@media(max-width:520px){
+.grid,.projects{grid-template-columns:1fr}
+.nav{min-height:68px}.logo{height:48px}
+section{padding:55px 0}
 }
+</style>
+</head>
+<body>
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #222;
-  line-height: 1.6;
-  background: #fff;
-}
+<header>
+<div class="container nav">
+<a href="#home"><img class="logo" src="file_00000000fccc81fab192adcf842529a8.png" alt="Babilonia Construction Services"></a>
+<button class="menu" onclick="document.querySelector('nav').classList.toggle('show')" aria-label="Menu">☰</button>
+<nav>
+<a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#projects">Projects</a><a href="#inspection">Inspection</a><a href="#contact">Contact</a>
+</nav>
+</div>
+</header>
 
-header {
-  background: #111;
-  color: #fff;
-  padding: 18px 6%;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
+<main id="home">
+<section class="hero">
+<div class="container hero-grid">
+<div>
+<span class="badge">CONTINUING THE SERVICE SINCE 1965</span>
+<h1>We Build.<br><span>We Protect.</span><br>We Deliver.</h1>
+<p>Professional construction, roofing, waterproofing, renovation, finishing and property inspection services by Babilonia Construction Services.</p>
+<div class="buttons">
+<a class="btn primary" href="#contact">REQUEST A QUOTATION</a>
+<a class="btn secondary" href="tel:09957730459">CALL 0995 773 0459</a>
+</div>
+</div>
+<div class="hero-card">
+<img src="file_00000000fccc81fab192adcf842529a8.png" alt="BCS logo">
+<h3>Quality Construction Services</h3>
+<p>Serving clients across Metro Manila and CALABARZON with practical, reliable construction solutions.</p>
+</div>
+</div>
+</section>
 
-.nav {
-  max-width: 1200px;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+<section id="about">
+<div class="container about">
+<div>
+<div class="section-head" style="text-align:left;margin-bottom:15px"><h2>Built on <span class="orange">Service & Trust</span></h2></div>
+<p>At Babilonia Construction Services (BCS), we provide hands-on construction solutions focused on quality workmanship, proper preparation and dependable project execution.</p>
+<ul class="list">
+<li>Professional and practical approach</li>
+<li>Residential and commercial works</li>
+<li>Roofing and waterproofing specialists</li>
+<li>Metro Manila & CALABARZON coverage</li>
+<li>Free ocular for qualified projects</li>
+</ul>
+</div>
+<div class="about-box">
+<h3>Our Commitment</h3>
+<p>We believe every project deserves proper planning, honest assessment and quality workmanship—from the first ocular inspection to project turnover.</p>
+<p class="note" style="color:#bbb">Babilonia Construction Services • Continuing the Service Since 1965</p>
+</div>
+</div>
+</section>
 
-.logo {
-  font-size: 22px;
-  font-weight: 800;
-  letter-spacing: 1px;
-}
+<section id="services" class="light">
+<div class="container">
+<div class="section-head"><h2>Our <span class="orange">Services</span></h2><p>Construction and property services tailored to your project's needs.</p></div>
+<div class="grid">
+<div class="card"><div class="icon">🏗️</div><h3>General Construction</h3><p>Construction, renovation, repairs and improvement works for residential and commercial properties.</p></div>
+<div class="card"><div class="icon">🏠</div><h3>Roofing</h3><p>Roof repairs, replacement, maintenance, leak correction and roofing-related works.</p></div>
+<div class="card"><div class="icon">💧</div><h3>Waterproofing</h3><p>Roof deck, facade, bathroom, balcony and other waterproofing and leak-prevention solutions.</p></div>
+<div class="card"><div class="icon">🎨</div><h3>Painting & Finishing</h3><p>Surface preparation, painting, skim coat, repairs and finishing works.</p></div>
+<div class="card"><div class="icon">🪟</div><h3>Glass & Aluminum</h3><p>Glass, aluminum doors, windows and related installation and improvement works.</p></div>
+<div class="card"><div class="icon">🔧</div><h3>Metal Works & Fabrication</h3><p>Metal fabrication, cladding, extensions, railings and custom construction metal works.</p></div>
+</div>
+</div>
+</section>
 
-.logo span {
-  color: #f58220;
-}
+<section id="inspection">
+<div class="container">
+<div class="section-head"><h2>Third-Party <span class="orange">Pre-Turnover Inspection</span></h2><p>An independent check before you accept your contractor's completed work.</p></div>
+<div class="grid">
+<div class="card"><div class="icon">🔍</div><h3>Identify Defects</h3><p>We visually check accessible areas for defects, incomplete work and workmanship concerns.</p></div>
+<div class="card"><div class="icon">📋</div><h3>Punch List</h3><p>Receive a documented list of observed deficiencies with locations and recommended corrective actions.</p></div>
+<div class="card"><div class="icon">📸</div><h3>Inspection Report</h3><p>Photo documentation and practical recommendations to help you prepare for turnover.</p></div>
+</div>
+<p class="note">Inspection is based on visible and reasonably accessible conditions. It is not a structural certification, engineering design, architectural certification, destructive test or warranty of concealed conditions.</p>
+</div>
+</section>
 
-nav a {
-  color: white;
-  text-decoration: none;
-  margin-left: 20px;
-  font-weight: bold;
-}
+<section id="projects" class="light">
+<div class="container">
+<div class="section-head"><h2>Selected <span class="orange">Project Categories</span></h2><p>Ask us about your next construction, repair or improvement project.</p></div>
+<div class="projects">
+<div class="project">ROOFING & WATERPROOFING</div>
+<div class="project">BUILDING & RENOVATION</div>
+<div class="project">PAINTING & FINISHING</div>
+<div class="project">GLASS & ALUMINUM</div>
+<div class="project">METAL FABRICATION</div>
+<div class="project">PROPERTY INSPECTION</div>
+</div>
+</div>
+</section>
 
-.hero {
-  background: linear-gradient(rgba(0,0,0,.68),rgba(0,0,0,.68)),
-  url("https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1800&q=80");
-  background-size: cover;
-  background-position: center;
-  min-height: 650px;
-  display: flex;
-  align-items: center;
-  color: white;
-  padding: 70px 6%;
-}
+<div class="cta">
+<div class="container cta-inner">
+<div><h2>Planning a project?</h2><p>Let BCS inspect your property and help you plan the right work.</p></div>
+<a class="btn" href="#contact">GET A FREE OCULAR</a>
+</div>
+</div>
 
-.hero-content {
-  max-width: 800px;
-}
+<section id="contact">
+<div class="container">
+<div class="section-head"><h2>Let's <span class="orange">Build Together</span></h2><p>Send us your project details and we'll help you determine the next step.</p></div>
+<div class="contact">
+<div class="contact-card">
+<h3>Contact BCS</h3>
+<p style="margin-top:12px">📞 <a href="tel:09957730459">0995 773 0459</a></p>
+<p>💬 Viber available</p>
+<p>🌐 <a href="https://bcsconstructionph.com">bcsconstructionph.com</a></p>
+<p>📍 Metro Manila & CALABARZON</p>
+</div>
+<div class="card">
+<h3>Request a Quotation</h3>
+<p style="margin:10px 0;color:#666">For faster quotation, send your project location, type of work, approximate area and photos through Viber.</p>
+<a class="btn primary" href="viber://chat?number=%2B639957730459">MESSAGE US ON VIBER</a>
+<p class="note">Free ocular available for qualified projects within NCR & CALABARZON.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
 
-.hero h1 {
-  font-size: clamp(40px, 7vw, 72px);
-  line-height: 1.05;
-  margin-bottom: 20px;
-}
-
-.hero h1 span {
-  color: #f58220;
-}
-
-.hero p {
-  font-size: 20px;
-  margin-bottom: 30px;
-  max-width: 680px;
-}
-
-.btn {
-  display: inline-block;
-  padding: 14px 25px;
-  background: #f58220;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  margin-right: 8px;
-}
-
-.btn.dark {
-  background: white;
-  color: #111;
+<footer>
+<div class="container">
+<p><strong>BABILONIA CONSTRUCTION SERVICES (BCS)</strong></p>
+<p>Continuing the Service Since 1965 • Metro Manila & CALABARZON</p>
+<p>0995 773 0459 (Viber) • bcsconstructionph.com</p>
+</div>
+</footer>
+</body>
+</html>  color: #111;
 }
 
 section {
