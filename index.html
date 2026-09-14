@@ -2,765 +2,128 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<meta name="description" content="Babilonia Construction Services - Construction, Waterproofing, Renovation, Structural Engineering, Repair and Maintenance Services in Metro Manila and CALABARZON.">
-
-<meta name="theme-color" content="#111111">
-
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Babilonia Construction Services - Construction, Waterproofing, Renovation, Structural Engineering and Maintenance.">
+<meta name="theme-color" content="#111">
 <title>Babilonia Construction Services | BCS</title>
 
 <style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    font-family:Arial,Helvetica,sans-serif;
-    line-height:1.6;
-    color:#222;
-    background:#fff;
-}
-
-img{
-    max-width:100%;
-    display:block;
-}
-
-a{
-    text-decoration:none;
-    color:inherit;
-}
-
-.container{
-    width:92%;
-    max-width:1200px;
-    margin:auto;
-}
-
-/* =========================
-   HEADER
-========================= */
-
-header{
-    position:sticky;
-    top:0;
-    z-index:1000;
-    background:#111;
-    box-shadow:0 2px 10px rgba(0,0,0,.25);
-}
-
-.navbar{
-    min-height:76px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:20px;
-}
-
-.site-logo{
-    display:block;
-    width:auto;
-    max-width:210px;
-    max-height:58px;
-    height:auto;
-    object-fit:contain;
-}
-
-.nav-links{
-    display:flex;
-    align-items:center;
-    gap:22px;
-    list-style:none;
-}
-
-.nav-links a{
-    color:#fff;
-    font-size:14px;
-    font-weight:bold;
-    transition:.3s;
-}
-
-.nav-links a:hover{
-    color:#f5b400;
-}
-
-.menu-toggle{
-    display:none;
-    color:#fff;
-    font-size:34px;
-    line-height:1;
-    cursor:pointer;
-}
-
-/* =========================
-   HERO
-========================= */
-
-.hero{
-    background:
-        linear-gradient(rgba(0,0,0,.78),rgba(0,0,0,.78)),
-        linear-gradient(135deg,#222,#000);
-    color:#fff;
-    padding:90px 0 80px;
-}
-
-.hero-grid{
-    display:grid;
-    grid-template-columns:1.4fr .8fr;
-    gap:50px;
-    align-items:center;
-}
-
-.hero h1{
-    font-size:52px;
-    line-height:1.1;
-    margin-bottom:20px;
-}
-
-.hero h1 span{
-    color:#f5b400;
-}
-
-.hero p{
-    font-size:19px;
-    color:#ddd;
-    margin-bottom:28px;
-}
-
-.hero-buttons{
-    display:flex;
-    flex-wrap:wrap;
-    gap:14px;
-}
-
-.btn{
-    display:inline-block;
-    padding:14px 24px;
-    border-radius:6px;
-    font-weight:bold;
-    transition:.3s;
-}
-
-.btn-primary{
-    background:#f5b400;
-    color:#111;
-}
-
-.btn-primary:hover{
-    background:#ffc72c;
-    transform:translateY(-2px);
-}
-
-.btn-outline{
-    border:1px solid #fff;
-    color:#fff;
-}
-
-.btn-outline:hover{
-    background:#fff;
-    color:#111;
-}
-
-.hero-logo-box{
-    text-align:center;
-}
-
-.hero-logo-box img{
-    width:260px;
-    max-width:100%;
-    margin:0 auto 18px;
-    border-radius:4px;
-}
-
-.hero-badge{
-    display:inline-block;
-    border:1px solid #f5b400;
-    color:#f5b400;
-    padding:8px 16px;
-    border-radius:30px;
-    font-weight:bold;
-    font-size:14px;
-}
-
-/* =========================
-   GENERAL SECTIONS
-========================= */
-
-section{
-    padding:80px 0;
-}
-
-.section-dark{
-    background:#111;
-    color:#fff;
-}
-
-.section-title{
-    text-align:center;
-    margin-bottom:15px;
-}
-
-.section-title h2{
-    font-size:38px;
-    margin-bottom:10px;
-}
-
-.section-title h2 span{
-    color:#f5b400;
-}
-
-.section-title p{
-    max-width:750px;
-    margin:auto;
-    color:#666;
-}
-
-.section-dark .section-title p{
-    color:#bbb;
-}
-
-/* =========================
-   ABOUT
-========================= */
-
-.about-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:45px;
-    align-items:center;
-}
-
-.about-text h3{
-    font-size:28px;
-    margin-bottom:18px;
-}
-
-.about-text p{
-    margin-bottom:15px;
-    color:#555;
-}
-
-.about-box{
-    background:#f5f5f5;
-    padding:30px;
-    border-left:5px solid #f5b400;
-    border-radius:8px;
-}
-
-.about-box h3{
-    margin-bottom:15px;
-}
-
-.about-box ul{
-    padding-left:20px;
-}
-
-.about-box li{
-    margin-bottom:9px;
-}
-
-/* =========================
-   SERVICES
-========================= */
-
-.services-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:22px;
-}
-
-.service-card{
-    background:#fff;
-    border:1px solid #ddd;
-    border-radius:10px;
-    padding:28px;
-    transition:.3s;
-    box-shadow:0 4px 15px rgba(0,0,0,.05);
-}
-
-.service-card:hover{
-    transform:translateY(-5px);
-    box-shadow:0 8px 25px rgba(0,0,0,.12);
-}
-
-.service-icon{
-    width:50px;
-    height:50px;
-    border-radius:50%;
-    background:#111;
-    color:#f5b400;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:23px;
-    font-weight:bold;
-    margin-bottom:18px;
-}
-
-.service-card h3{
-    margin-bottom:10px;
-    font-size:20px;
-}
-
-.service-card p{
-    color:#666;
-    font-size:14px;
-}
-
-/* =========================
-   PROJECTS
-========================= */
-
-.projects-section{
-    background:#f7f7f7;
-}
-
-.filters{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:9px;
-    margin:30px 0;
-}
-
-.filter-btn{
-    border:1px solid #ccc;
-    background:#fff;
-    padding:9px 15px;
-    border-radius:25px;
-    cursor:pointer;
-    font-weight:bold;
-    font-size:13px;
-}
-
-.filter-btn.active,
-.filter-btn:hover{
-    background:#f5b400;
-    border-color:#f5b400;
-    color:#111;
-}
-
-.project-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:22px;
-}
-
-.project-card{
-    background:#fff;
-    border-radius:10px;
-    overflow:hidden;
-    border:1px solid #ddd;
-    cursor:pointer;
-    transition:.3s;
-}
-
-.project-card:hover{
-    transform:translateY(-4px);
-    box-shadow:0 8px 22px rgba(0,0,0,.12);
-}
-
-.project-photo{
-    height:220px;
-    width:100%;
-    object-fit:cover;
-    background:#ddd;
-}
-
-.project-card.photo-missing .project-photo{
-    display:none;
-}
-
-.project-card.photo-missing::before{
-    content:"BCS PROJECT PHOTO";
-    height:220px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    background:#222;
-    color:#f5b400;
-    font-weight:bold;
-    letter-spacing:1px;
-}
-
-.project-info{
-    padding:17px;
-}
-
-.project-info h3{
-    font-size:17px;
-    margin-bottom:5px;
-}
-
-.project-info p{
-    color:#777;
-    font-size:13px;
-}
-
-.photo-note{
-    text-align:center;
-    margin-top:25px;
-    color:#777;
-    font-size:13px;
-}
-
-/* =========================
-   INSPECTION SERVICE
-========================= */
-
-.inspection{
-    background:#111;
-    color:#fff;
-}
-
-.inspection-header{
-    text-align:center;
-    max-width:850px;
-    margin:0 auto 40px;
-}
-
-.inspection-header h2{
-    font-size:40px;
-    line-height:1.2;
-    margin-bottom:15px;
-}
-
-.inspection-header h2 span{
-    color:#f5b400;
-}
-
-.inspection-header p{
-    color:#bbb;
-    font-size:18px;
-}
-
-.inspection-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:25px;
-}
-
-.inspection-card{
-    background:#1b1b1b;
-    border:1px solid #333;
-    border-radius:14px;
-    padding:32px;
-}
-
-.inspection-card h3{
-    color:#f5b400;
-    font-size:25px;
-    margin-bottom:20px;
-}
-
-.inspection-card ul{
-    padding-left:22px;
-}
-
-.inspection-card li{
-    margin-bottom:12px;
-    color:#ddd;
-}
-
-.inspection-disclaimer{
-    margin-top:30px;
-    padding:22px;
-    border:1px solid #444;
-    border-radius:10px;
-    color:#aaa;
-    font-size:13px;
-}
-
-/* =========================
-   CONTACT
-========================= */
-
-.contact{
-    background:#f5f5f5;
-}
-
-.contact-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:35px;
-}
-
-.contact-card{
-    background:#fff;
-    padding:30px;
-    border-radius:10px;
-    border:1px solid #ddd;
-}
-
-.contact-card h3{
-    margin-bottom:18px;
-    font-size:25px;
-}
-
-.contact-item{
-    margin-bottom:15px;
-}
-
-.contact-item strong{
-    display:block;
-    margin-bottom:3px;
-}
-
-.contact-item a{
-    color:#b17c00;
-    font-weight:bold;
-}
-
-.contact-buttons{
-    display:flex;
-    flex-wrap:wrap;
-    gap:12px;
-    margin-top:20px;
-}
-
-/* =========================
-   FOOTER
-========================= */
-
-footer{
-    background:#080808;
-    color:#aaa;
-    padding:35px 0;
-}
-
-.footer-content{
-    display:flex;
-    justify-content:space-between;
-    gap:20px;
-    align-items:center;
-}
-
-.footer-logo{
-    width:150px;
-    max-height:50px;
-    object-fit:contain;
-}
-
-.footer-text{
-    font-size:13px;
-}
-
-.footer-text strong{
-    color:#f5b400;
-}
-
-/* =========================
-   MODAL
-========================= */
-
-.modal{
-    display:none;
-    position:fixed;
-    inset:0;
-    background:rgba(0,0,0,.9);
-    z-index:3000;
-    padding:30px;
-    align-items:center;
-    justify-content:center;
-}
-
-.modal.show{
-    display:flex;
-}
-
-.modal-content{
-    max-width:1000px;
-    width:100%;
-    position:relative;
-}
-
-.modal-content img{
-    max-height:82vh;
-    width:auto;
-    max-width:100%;
-    margin:auto;
-    object-fit:contain;
-}
-
-.modal-close{
-    position:absolute;
-    right:0;
-    top:-45px;
-    color:#fff;
-    font-size:35px;
-    cursor:pointer;
-}
-
-/* =========================
-   MOBILE
-========================= */
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:#222;line-height:1.6;background:#fff}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+.container{width:92%;max-width:1200px;margin:auto}
+
+header{position:sticky;top:0;z-index:1000;background:#111;box-shadow:0 2px 10px #0005}
+.navbar{min-height:72px;display:flex;align-items:center;justify-content:space-between}
+.site-logo{width:auto;max-width:210px;max-height:58px;object-fit:contain}
+.nav-links{display:flex;gap:22px;list-style:none}
+.nav-links a{color:#fff;font-size:14px;font-weight:bold}
+.nav-links a:hover{color:#f5b400}
+.menu-toggle{display:none;color:#fff;font-size:34px;cursor:pointer}
+
+.hero{background:linear-gradient(#000d,#000d),linear-gradient(135deg,#222,#000);color:#fff;padding:80px 0}
+.hero-grid{display:grid;grid-template-columns:1.4fr .8fr;gap:40px;align-items:center}
+.hero h1{font-size:50px;line-height:1.1;margin-bottom:20px}
+.hero h1 span,.section-title span,.inspection-header span{color:#f5b400}
+.hero p{font-size:18px;color:#ddd;margin-bottom:25px}
+.buttons{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:13px 22px;border-radius:6px;font-weight:bold}
+.btn-primary{background:#f5b400;color:#111}
+.btn-outline{border:1px solid #fff;color:#fff}
+.hero-logo{text-align:center}
+.hero-logo img{width:240px;margin:auto;border-radius:4px}
+.badge{display:inline-block;margin-top:15px;border:1px solid #f5b400;color:#f5b400;border-radius:30px;padding:7px 14px;font-size:13px;font-weight:bold}
+
+section{padding:75px 0}
+.section-dark{background:#111;color:#fff}
+.section-title{text-align:center;margin-bottom:40px}
+.section-title h2{font-size:36px;margin-bottom:8px}
+.section-title p{max-width:760px;margin:auto;color:#777}
+.section-dark .section-title p{color:#bbb}
+
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:35px}
+.about-text h3{font-size:27px;margin-bottom:15px}
+.about-text p{color:#555;margin-bottom:14px}
+.about-box{background:#f5f5f5;padding:28px;border-left:5px solid #f5b400;border-radius:8px}
+.about-box li{margin-left:20px;margin-bottom:8px}
+
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.service{background:#fff;color:#222;padding:25px;border-radius:10px;border:1px solid #ddd}
+.service:hover{transform:translateY(-3px)}
+.icon{width:46px;height:46px;background:#111;color:#f5b400;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:bold;margin-bottom:15px}
+.service h3{font-size:19px;margin-bottom:8px}
+.service p{font-size:14px;color:#666}
+
+.projects{background:#f7f7f7}
+.filters{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-bottom:30px}
+.filter{border:1px solid #ccc;background:#fff;padding:8px 13px;border-radius:25px;font-weight:bold;font-size:12px;cursor:pointer}
+.filter.active,.filter:hover{background:#f5b400;border-color:#f5b400}
+.project-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.project{background:#fff;border:1px solid #ddd;border-radius:10px;overflow:hidden;cursor:pointer}
+.project img{width:100%;height:210px;object-fit:cover;background:#222}
+.project.missing img{display:none}
+.project.missing:before{content:"BCS PROJECT PHOTO";height:210px;background:#222;color:#f5b400;display:flex;align-items:center;justify-content:center;font-weight:bold}
+.project-info{padding:15px}
+.project-info h3{font-size:16px}
+.project-info p{font-size:12px;color:#777}
+.note{text-align:center;color:#777;font-size:13px;margin-top:22px}
+
+.inspection{background:#111;color:#fff}
+.inspection-header{text-align:center;max-width:850px;margin:auto;margin-bottom:35px}
+.inspection-header h2{font-size:38px;line-height:1.2;margin-bottom:12px}
+.inspection-header p{color:#bbb;font-size:17px}
+.inspection-card{background:#1b1b1b;border:1px solid #333;border-radius:12px;padding:28px}
+.inspection-card h3{color:#f5b400;font-size:24px;margin-bottom:15px}
+.inspection-card li{margin-left:20px;margin-bottom:9px;color:#ddd}
+.disclaimer{margin-top:25px;border:1px solid #444;border-radius:8px;padding:18px;color:#aaa;font-size:13px}
+
+.contact{background:#f5f5f5}
+.contact-card{background:#fff;border:1px solid #ddd;border-radius:10px;padding:28px}
+.contact-card h3{font-size:24px;margin-bottom:15px}
+.contact-item{margin-bottom:13px}
+.contact-item strong{display:block}
+.contact-item a{color:#a87500;font-weight:bold}
+
+footer{background:#080808;color:#aaa;padding:30px 0}
+.footer{display:flex;justify-content:space-between;align-items:center;gap:20px}
+.footer-logo{width:150px;max-height:50px;object-fit:contain}
+.footer small{font-size:12px}
+
+.modal{display:none;position:fixed;inset:0;background:#000e;z-index:2000;align-items:center;justify-content:center;padding:25px}
+.modal.show{display:flex}
+.modal img{max-height:85vh;max-width:95vw}
+.close{position:absolute;right:20px;top:10px;color:#fff;font-size:38px;cursor:pointer}
 
 @media(max-width:900px){
-
-    .hero-grid,
-    .about-grid,
-    .inspection-grid,
-    .contact-grid{
-        grid-template-columns:1fr;
-    }
-
-    .services-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    .project-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    .hero{
-        padding:65px 0;
-    }
-
-    .hero h1{
-        font-size:42px;
-    }
-
+.hero-grid,.two-col{grid-template-columns:1fr}
+.services-grid,.project-grid{grid-template-columns:repeat(2,1fr)}
+.hero h1{font-size:42px}
 }
-
 @media(max-width:650px){
-
-    .navbar{
-        min-height:70px;
-    }
-
-    .site-logo{
-        max-width:180px;
-        max-height:52px;
-    }
-
-    .menu-toggle{
-        display:block;
-    }
-
-    .nav-links{
-        display:none;
-        position:absolute;
-        left:0;
-        right:0;
-        top:70px;
-        background:#111;
-        flex-direction:column;
-        align-items:stretch;
-        gap:0;
-        padding:10px 0;
-        border-top:1px solid #333;
-    }
-
-    .nav-links.show{
-        display:flex;
-    }
-
-    .nav-links li{
-        width:100%;
-    }
-
-    .nav-links a{
-        display:block;
-        padding:14px 5%;
-    }
-
-    section{
-        padding:60px 0;
-    }
-
-    .hero{
-        padding:55px 0;
-    }
-
-    .hero h1{
-        font-size:36px;
-    }
-
-    .hero p{
-        font-size:17px;
-    }
-
-    .hero-logo-box img{
-        width:210px;
-    }
-
-    .services-grid,
-    .project-grid{
-        grid-template-columns:1fr;
-    }
-
-    .section-title h2{
-        font-size:31px;
-    }
-
-    .inspection-header h2{
-        font-size:31px;
-    }
-
-    .inspection-card{
-        padding:25px;
-    }
-
-    .footer-content{
-        flex-direction:column;
-        text-align:center;
-    }
-
+.site-logo{max-width:180px;max-height:52px}
+.menu-toggle{display:block}
+.nav-links{display:none;position:absolute;top:72px;left:0;right:0;background:#111;flex-direction:column;gap:0;padding:8px 5%}
+.nav-links.show{display:flex}
+.nav-links a{display:block;padding:13px 0}
+.services-grid,.project-grid{grid-template-columns:1fr}
+section{padding:60px 0}
+.hero{padding:55px 0}
+.hero h1{font-size:35px}
+.inspection-header h2{font-size:30px}
+.footer{flex-direction:column;text-align:center}
 }
-
-/* =========================
-   SMALL DEVICES
-========================= */
-
-@media(max-width:380px){
-
-    .site-logo{
-        max-width:155px;
-    }
-
-    .hero h1{
-        font-size:32px;
-    }
-
-    .btn{
-        width:100%;
-        text-align:center;
-    }
-
-}
-
 </style>
 </head>
 
 <body>
 
-<!-- =========================
-     HEADER
-========================= -->
-
 <header>
-
 <div class="container navbar">
-
-<a href="#home" class="brand">
-<img src="file_00000000fccc81fab192adcf842529a8.png"
-     alt="Babilonia Construction Services"
-     class="site-logo">
-</a>
-
-<div class="menu-toggle" id="menuToggle">
-☰
-</div>
-
-<ul class="nav-links" id="navLinks">
+<a href="#home"><img class="site-logo" src="file_00000000fccc81fab192adcf842529a8.png" alt="Babilonia Construction Services"></a>
+<div class="menu-toggle" id="menu">☰</div>
+<ul class="nav-links" id="nav">
 <li><a href="#home">Home</a></li>
 <li><a href="#about">About</a></li>
 <li><a href="#services">Services</a></li>
@@ -768,1514 +131,291 @@ footer{
 <li><a href="#inspection">Inspection</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
-
 </div>
-
 </header>
 
-
-<!-- =========================
-     HERO
-========================= -->
-
 <section class="hero" id="home">
-
 <div class="container hero-grid">
-
 <div>
-
-<h1>
-WE BUILD.<br>
-<span>WE PROTECT.</span><br>
-WE DELIVER.
-</h1>
-
-<p>
-Babilonia Construction Services provides dependable
-construction, waterproofing, renovation, structural,
-specialized and maintenance services for residential,
-commercial and industrial projects.
-</p>
-
-<div class="hero-buttons">
-
-<a href="#services" class="btn btn-primary">
-View Our Services
-</a>
-
-<a href="#contact" class="btn btn-outline">
-Contact BCS
-</a>
-
+<h1>WE BUILD.<br><span>WE PROTECT.</span><br>WE DELIVER.</h1>
+<p>Babilonia Construction Services provides dependable construction, waterproofing, renovation, structural, specialized and maintenance services for residential, commercial and industrial projects.</p>
+<div class="buttons">
+<a class="btn btn-primary" href="#services">View Our Services</a>
+<a class="btn btn-outline" href="#contact">Contact BCS</a>
 </div>
-
 </div>
-
-<div class="hero-logo-box">
-
-<img src="file_00000000fccc81fab192adcf842529a8.png"
-     alt="BCS Official Logo">
-
-<div class="hero-badge">
-CONTINUING THE SERVICE SINCE 1965
+<div class="hero-logo">
+<img src="file_00000000fccc81fab192adcf842529a8.png" alt="BCS Official Logo">
+<div class="badge">CONTINUING THE SERVICE SINCE 1965</div>
 </div>
-
 </div>
-
-</div>
-
 </section>
-
-
-<!-- =========================
-     ABOUT
-========================= -->
 
 <section id="about">
-
 <div class="container">
-
 <div class="section-title">
-
-<h2>
-ABOUT <span>BCS</span>
-</h2>
-
-<p>
-Building solutions with experience, workmanship and
-commitment to client satisfaction.
-</p>
-
+<h2>ABOUT <span>BCS</span></h2>
+<p>Building solutions with experience, workmanship and commitment to client satisfaction.</p>
 </div>
-
-<div class="about-grid">
-
+<div class="two-col">
 <div class="about-text">
-
-<h3>
-Babilonia Construction Services
-</h3>
-
-<p>
-Babilonia Construction Services (BCS) provides
-construction and specialized building services for
-residential, commercial and industrial clients.
-</p>
-
-<p>
-Our services cover construction, renovation,
-waterproofing, structural engineering support,
-repair and maintenance, finishing works and other
-specialized construction requirements.
-</p>
-
-<p>
-We serve projects throughout Metro Manila and
-CALABARZON.
-</p>
-
+<h3>Babilonia Construction Services</h3>
+<p>BCS provides construction and specialized building services for residential, commercial and industrial clients.</p>
+<p>Our services cover construction, renovation, waterproofing, structural engineering support, repair and maintenance, finishing works and other specialized construction requirements.</p>
+<p>We serve projects throughout Metro Manila and CALABARZON.</p>
 </div>
-
 <div class="about-box">
-
 <h3>Why Choose BCS?</h3>
-
 <ul>
-
 <li>Experienced construction service provider</li>
-
 <li>Practical and professional project approach</li>
-
 <li>Construction and specialized services under one roof</li>
-
 <li>Quality workmanship and proper site preparation</li>
-
-<li>Metro Manila and CALABARZON service coverage</li>
-
+<li>Metro Manila and CALABARZON coverage</li>
 <li>Free ocular for qualified projects</li>
-
 </ul>
-
 </div>
-
 </div>
-
 </div>
-
 </section>
-
-
-<!-- =========================
-     SERVICES
-========================= -->
 
 <section id="services" class="section-dark">
-
 <div class="container">
-
 <div class="section-title">
-
-<h2>
-OUR <span>SERVICES</span>
-</h2>
-
-<p>
-Complete construction and specialized building
-solutions for your project.
-</p>
-
+<h2>OUR <span>SERVICES</span></h2>
+<p>Complete construction and specialized building solutions.</p>
 </div>
-
 <div class="services-grid">
 
+<div class="service"><div class="icon">01</div><h3>Construction</h3><p>General construction, structural works, concrete works, site development and building construction.</p></div>
 
-<div class="service-card">
+<div class="service"><div class="icon">02</div><h3>Waterproofing & Roofing</h3><p>Roof waterproofing, concrete waterproofing, leak repair, roof maintenance and waterproofing systems.</p></div>
 
-<div class="service-icon">01</div>
+<div class="service"><div class="icon">03</div><h3>Renovation & Fit-Out</h3><p>Residential and commercial renovation, interior fit-out, improvements and restoration works.</p></div>
 
-<h3>Construction</h3>
+<div class="service"><div class="icon">04</div><h3>Structural Engineering</h3><p>Structural assessment, design and analysis, inspection, detailing, technical consultation and structural repair assessment.</p></div>
 
-<p>
-General construction, structural works,
-concrete works, site development and
-building construction.
-</p>
+<div class="service"><div class="icon">05</div><h3>Electrical Works</h3><p>Electrical installation, repair, maintenance, lighting and related electrical construction works.</p></div>
 
-</div>
+<div class="service"><div class="icon">06</div><h3>Ceiling & Drywall</h3><p>Gypsum board, ceiling systems, partitions, drywall installation and finishing works.</p></div>
 
+<div class="service"><div class="icon">07</div><h3>Glass & Aluminum</h3><p>Glass doors, windows, aluminum works, frames, partitions and related installations.</p></div>
 
-<div class="service-card">
+<div class="service"><div class="icon">08</div><h3>Metal Works</h3><p>Metal fabrication, steel works, brackets, frames, railings and customized fabrication.</p></div>
 
-<div class="service-icon">02</div>
+<div class="service"><div class="icon">09</div><h3>Painting & Finishing</h3><p>Surface preparation, painting, protective coatings and finishing works.</p></div>
 
-<h3>Waterproofing & Roofing</h3>
+<div class="service"><div class="icon">10</div><h3>Design & Build</h3><p>Integrated planning, design coordination, construction and project implementation.</p></div>
 
-<p>
-Roof waterproofing, concrete waterproofing,
-leak repair, roof maintenance and
-waterproofing systems.
-</p>
+<div class="service"><div class="icon">11</div><h3>Repair & Maintenance</h3><p>Building repairs, preventive maintenance, defect correction and property improvement.</p></div>
 
 </div>
-
-
-<div class="service-card">
-
-<div class="service-icon">03</div>
-
-<h3>Renovation & Fit-Out</h3>
-
-<p>
-Residential and commercial renovation,
-interior fit-out, improvements and
-restoration works.
-</p>
-
 </div>
-
-
-<div class="service-card">
-
-<div class="service-icon">04</div>
-
-<h3>Structural Engineering</h3>
-
-<p>
-Structural assessment, design and analysis,
-inspection, detailing, technical consultation
-and structural repair assessment.
-</p>
-
-</div>
-
-
-<div class="service-card">
-
-<div class="service-icon">05</div>
-
-<h3>Electrical Works</h3>
-
-<p>
-Electrical installation, repair, maintenance,
-lighting and related electrical construction
-works.
-</p>
-
-</div>
-
-
-<div class="service-card">
-
-<div class="service-icon">06</div>
-
-<h3>Ceiling & Drywall</h3>
-
-<p>
-Gypsum board, ceiling systems, partitions,
-drywall installation and finishing works.
-</p>
-
-</div>
-
-
-<div class="service-card">
-
-<div class="service-icon">07</div>
-
-<h3>Glass & Aluminum</h3>
-
-<p>
-Glass doors, windows, aluminum works,
-frames, partitions and related installations.
-</p>
-
-</div>
-
-
-<div class="service-card">
-
-<div class="service-icon">08</div>
-
-<h3>Metal Works</h3>
-
-<p>
-Metal fabrication, steel works, brackets,
-frames, railings and customized fabrication.
-</p>
-
-</div>
-
-
-<div class="service-card">
-
-<div class="service-icon">09</div>
-
-<h3>Painting & Finishing</h3>
-
-<p>
-Surface preparation, painting, protective
-coatings and finishing works.
-</p>
-
-</div>
-
-
-<div class="service-card">
-
-<div class="service-icon">10</div>
-
-<h3>Design & Build</h3>
-
-<p>
-Integrated planning, design coordination,
-construction and project implementation.
-</p>
-
-</div>
-
-
-<div class="service-card">
-
-<div class="service-icon">11</div>
-
-<h3>Repair & Maintenance</h3>
-
-<p>
-Building repairs, preventive maintenance,
-defect correction and property improvement.
-</p>
-
-</div>
-
-
-</div>
-
-</div>
-
 </section>
 
-
-<!-- =========================
-     PROJECTS
-========================= -->
-
-<section id="projects" class="projects-section">
-
+<section id="projects" class="projects">
 <div class="container">
-
 <div class="section-title">
-
-<h2>
-OUR <span>PROJECTS</span>
-</h2>
-
-<p>
-Actual BCS project photographs organized by
-service category.
-</p>
-
+<h2>OUR <span>PROJECTS</span></h2>
+<p>Actual BCS project photographs organized by service category.</p>
 </div>
-
 
 <div class="filters">
-
-<button class="filter-btn active" data-filter="all">
-All
-</button>
-
-<button class="filter-btn" data-filter="construction">
-Construction
-</button>
-
-<button class="filter-btn" data-filter="structural">
-Structural Engineering
-</button>
-
-<button class="filter-btn" data-filter="waterproofing">
-Waterproofing / Roofing
-</button>
-
-<button class="filter-btn" data-filter="renovation">
-Renovation / Fit-Out
-</button>
-
-<button class="filter-btn" data-filter="electrical">
-Electrical
-</button>
-
-<button class="filter-btn" data-filter="ceiling">
-Ceiling / Drywall
-</button>
-
-<button class="filter-btn" data-filter="glass">
-Glass / Aluminum
-</button>
-
-<button class="filter-btn" data-filter="metal">
-Metal Works
-</button>
-
-<button class="filter-btn" data-filter="painting">
-Painting
-</button>
-
+<button class="filter active" data-f="all">All</button>
+<button class="filter" data-f="construction">Construction</button>
+<button class="filter" data-f="structural">Structural Engineering</button>
+<button class="filter" data-f="waterproofing">Waterproofing / Roofing</button>
+<button class="filter" data-f="renovation">Renovation / Fit-Out</button>
+<button class="filter" data-f="electrical">Electrical</button>
+<button class="filter" data-f="ceiling">Ceiling / Drywall</button>
+<button class="filter" data-f="glass">Glass / Aluminum</button>
+<button class="filter" data-f="metal">Metal Works</button>
+<button class="filter" data-f="painting">Painting</button>
 </div>
 
-
-<div class="project-grid" id="projectGrid">
-
-
-<article class="project-card" data-category="construction structural">
-
-<img class="project-photo"
-src="1000003110.jpg"
-alt="BCS Structural Construction Project"
-loading="lazy"
-onclick="openModal(this)"
-onerror="this.style.display='none';this.parentElement.classList.add('photo-missing');">
-
-<div class="project-info">
-<h3>Structural Construction</h3>
-<p>Actual BCS Project</p>
+<div class="project-grid" id="projectsGrid"></div>
+<div class="note">Actual BCS project photographs. Additional projects can be added as the portfolio grows.</div>
 </div>
-
-</article>
-
-
-<article class="project-card" data-category="construction structural">
-
-<img class="project-photo"
-src="1000003115.jpg"
-alt="BCS Structural Project"
-loading="lazy"
-onclick="openModal(this)"
-onerror="this.style.display='none';this.parentElement.classList.add('photo-missing');">
-
-<div class="project-info">
-<h3>Structural Works</h3>
-<p>Actual BCS Project</p>
-</div>
-
-</article>
-
-
-<article class="project-card" data-category="construction structural">
-
-<img class="project-photo"
-src="1000003184.jpg"
-alt="BCS Construction Project"
-loading="lazy"
-onclick="openModal(this)"
-onerror="this.style.display='none';this.parentElement.classList.add('photo-missing');">
-
-<div class="project-info">
-<h3>Construction Works</h3>
-<p>Actual BCS Project</p>
-</div>
-
-</article>
-
-
-<article class="project-card" data-category="construction structural">
-
-<img class="project-photo"
-src="1000003277.jpg"
-alt="BCS Structural Construction"
-loading="lazy"
-onclick="openModal(this)"
-onerror="this.style.display='none';this.parentElement.classList.add('photo-missing');">
-
-<div class="project-info">
-<h3>Structural Construction</h3>
-<p>Actual BCS Project</p>
-</div>
-
-</article>
-
-
-<article class="project-card" data-category="construction structural">
-
-<img class="project-photo"
-src="1000003329.jpg"
-alt="BCS Structural Project"
-loading="lazy"
-onclick="openModal(this)"
-onerror="this.style.display='none';this.parentElement.classList.add('photo-missing');">
-
-<div class="project-info">
-<h3>Structural Works</h3>
-<p>Actual BCS Project</p>
-</div>
-
-</article>
-
-
-<article class="project-card" data-category="construction structural">
-
-<img class="project-photo"
-src="1000003349.jpg"
-alt="BCS Construction and Metal Works"
-loading="lazy"
-onclick="openModal(this)"
-onerror="this.style.display='none';this.parentElement.classList.add('photo-missing');">
-
-<div class="project-info">
-<h3>Construction & Metal Works</h3>
-<p>Actual BCS Project</p>
-</div>
-
-</article>
-
-
-<article class="project-card" data-category="construction structural">
-
-<img class="project-photo"
-src="1000003353.jpg"
-alt="BCS Structural Works"
-loading="lazy"
-onclick="openModal(this)"
-onerror="this.style.display='none';this.parentElement.classList.add('photo-missing');">
-
-<div class="project-info">
-<h3>Structural Works</h3>
-<p>Actual BCS Project</p>
-</div>
-
-</article>
-
-
-<article class="project-card" data-category="construction structural">
-
-<img class="project-photo"
-src="1000003355.jpg"
-alt="BCS Metal Construction Project"
-loading="lazy"
-onclick="openModal(this)"
-onerror="this.style.display='none';this.parentElement.classList.add('photo-missing');">
-
-<div class="project-info">
-<h3>Construction / Metal Works</h3>
-<p>Actual BCS Project</p>
-</div>
-
-</article>
-
-
-<article class="project-card" data-category="construction structural">
-
-<img class="project-photo"
-src="1000003360.jpg"
-alt="BCS Construction Project"
-loading="lazy"
-onclick="openModal(this)"
-onerror="this.style.display='none';this.parentElement.classList.add('photo-missing');">
-
-<div class="project-info">
-<h3>Construction Works</h3>
-<p>Actual BCS Project</p>
-</div>
-
-</article>
-
-
-<article class="project-card" data-category="construction structural">
-
-<img class="project-photo"
-src="1000003783.jpg"
-alt="BCS Structural and Metal Project"
-loading="lazy"
-onclick="openModal(this)"
-onerror="this.style.display='none';this.parentElement.classList.add('photo-missing');">
-
-<div class="project-info">
-<h3>Structural / Metal Works</h3>
-<p>Actual BCS Project</p>
-</div>
-
-</article>
-
-
-<article class="project-card" data-category="electrical">
-
-<img class="project-photo"
-src="1000004406.jpg"
-alt="BCS Ceiling and Electrical Project"
-loading="lazy"
-onclick="openModal(this)"
-onerror="this.style.display='none';this.parentElement.classList.add('photo-missing');">
-
-<div class="project-info">
-<h3>Ceiling / Electrical Works</h3>
-<p>Actual BCS Project</p>
-</div>
-
-</article>
-
-
-<article class="project-card" data-category="electrical">
-
-<img class="project-photo"
-src="1000004531.jpg"
-alt="BCS Electrical Project"
-loading="lazy"
-onclick="openModal(this)"
-onerror="this.style.display='none';this.parentElement.classList.add('photo-missing');">
-
-<div class="project-info">
-<h3>Electrical Works</h3>
-<p>Actual BCS Project</p>
-</div>
-
-</article>
-
-
-<article class="project-card" data-category="electrical">
-
-<img class="project-photo"
-src="1000004534.jpg"
-alt="BCS Electrical Installation"
-loading="lazy"
-onclick="openModal(this)"
-onerror="this.style.display='none';this.parentElement.classList.add('photo-missing');">
-
-<div class="project-info">
-<h3>Electrical Installation</h3>
-<p>Actual BCS Project</p>
-</div>
-
-</article>
-
-
-<article class="project-card" data-category="ceiling drywall">
-
-<img class="project-photo"
-src="1000005141.jpg"
-alt="BCS Ceiling Project"
-loading="lazy"
-onclick="openModal(this)"
-onerror="this.style.display='none';this.parentElement.classList.add('photo-missing');">
-
-<div class="project-info">
-<h3>Ceiling Works</h3>
-<p>Actual BCS Project</p>
-</div>
-
-</article>
-
-
-<article class="project-card" data-category="waterproofing roofing">
-
-<img class="project-photo"
-src="1000054430.jpg"
-alt="BCS Roofing and Waterproofing Project"
-loading="lazy"
-onclick="openModal(this)"
-onerror="this.style.display='none';this.parentElement.classList.add('photo-missing');">
-
-<div class="project-info">
-<h3>Roofing / Waterproofing</h3>
-<p>Actual BCS Project</p>
-</div>
-
-</article>
-
-
-<article class="project-card" data-category="renovation">
-
-<img class="project-photo"
-src="1000050884.jpg"
-alt="BCS Renovation Project"
-loading="lazy"
-onclick="openModal(this)"
-onerror="this.style.display='none';this.parentElement.classList.add('photo-missing');">
-
-<div class="project-info">
-<h3>Renovation / Fit-Out</h3>
-<p>Actual BCS Project</p>
-</div>
-
-</article>
-
-
-<article class="project-card" data-category="painting">
-
-<img class="project-photo"
-src="1000052714.jpg"
-alt="BCS Painting and Finishing Project"
-loading="lazy"
-onclick="openModal(this)"
-onerror="this.style.display='none';this.parentElement.classList.add('photo-missing');">
-
-<div class="project-info">
-<h3>Painting / Finishing</h3>
-<p>Actual BCS Project</p>
-</div>
-
-</article>
-
-
-<article class="project-card" data-category="renovation glass">
-
-<img class="project-photo"
-src="1000052738.jpg"
-alt="BCS Glass and Aluminum Project"
-loading="lazy"
-onclick="openModal(this)"
-onerror="this.style.display='none';this.parentElement.classList.add('photo-missing');">
-
-<div class="project-info">
-<h3>Glass / Aluminum</h3>
-<p>Actual BCS Project</p>
-</div>
-
-</article>
-
-
-<article class="project-card" data-category="glass aluminum renovation">
-
-<img class="project-photo"
-src="1000052748.jpg"
-alt="BCS Glass Aluminum and Renovation Project"
-loading="lazy"
-onclick="openModal(this)"
-onerror="this.style.display='none';this.parentElement.classList.add('photo-missing');">
-
-<div class="project-info">
-<h3>Glass / Aluminum / Fit-Out</h3>
-<p>Actual BCS Project</p>
-</div>
-
-</article>
-
-
-<article class="project-card" data-category="renovation">
-
-<img class="project-photo"
-src="1000052749.jpg"
-alt="BCS Interior Fit-Out Project"
-loading="lazy"
-onclick="openModal(this)"
-onerror="this.style.display='none';this.parentElement.classList.add('photo-missing');">
-
-<div class="project-info">
-<h3>Interior Fit-Out</h3>
-<p>Actual BCS Project</p>
-</div>
-
-</article>
-
-
-<article class="project-card" data-category="renovation">
-
-<img class="project-photo"
-src="1000052720.jpg"
-alt="BCS Interior Renovation"
-loading="lazy"
-onclick="openModal(this)"
-onerror="this.style.display='none';this.parentElement.classList.add('photo-missing');">
-
-<div class="project-info">
-<h3>Interior Renovation</h3>
-<p>Actual BCS Project</p>
-</div>
-
-</article>
-
-
-<article class="project-card" data-category="ceiling drywall">
-
-<img class="project-photo"
-src="1000053088.jpg"
-alt="BCS Ceiling and Drywall Project"
-loading="lazy"
-onclick="openModal(this)"
-onerror="this.style.display='none';this.parentElement.classList.add('photo-missing');">
-
-<div class="project-info">
-<h3>Ceiling / Drywall</h3>
-<p>Actual BCS Project</p>
-</div>
-
-</article>
-
-
-<article class="project-card" data-category="ceiling drywall">
-
-<img class="project-photo"
-src="1000066948.jpg"
-alt="BCS Ceiling Drywall Project"
-loading="lazy"
-onclick="openModal(this)"
-onerror="this.style.display='none';this.parentElement.classList.add('photo-missing');">
-
-<div class="project-info">
-<h3>Ceiling / Drywall</h3>
-<p>Actual BCS Project</p>
-</div>
-
-</article>
-
-
-<article class="project-card" data-category="renovation">
-
-<img class="project-photo"
-src="1000053104.jpg"
-alt="BCS Renovation Project"
-loading="lazy"
-onclick="openModal(this)"
-onerror="this.style.display='none';this.parentElement.classList.add('photo-missing');">
-
-<div class="project-info">
-<h3>Renovation Works</h3>
-<p>Actual BCS Project</p>
-</div>
-
-</article>
-
-
-<article class="project-card" data-category="renovation">
-
-<img class="project-photo"
-src="1000053295.jpg"
-alt="BCS Fit-Out Project"
-loading="lazy"
-onclick="openModal(this)"
-onerror="this.style.display='none';this.parentElement.classList.add('photo-missing');">
-
-<div class="project-info">
-<h3>Fit-Out Works</h3>
-<p>Actual BCS Project</p>
-</div>
-
-</article>
-
-
-<article class="project-card" data-category="metal">
-
-<img class="project-photo"
-src="1000054173.jpg"
-alt="BCS Metal Fabrication Project"
-loading="lazy"
-onclick="openModal(this)"
-onerror="this.style.display='none';this.parentElement.classList.add('photo-missing');">
-
-<div class="project-info">
-<h3>Metal Fabrication</h3>
-<p>Actual BCS Project</p>
-</div>
-
-</article>
-
-
-<article class="project-card" data-category="renovation">
-
-<img class="project-photo"
-src="1000054574.jpg"
-alt="BCS Renovation Project"
-loading="lazy"
-onclick="openModal(this)"
-onerror="this.style.display='none';this.parentElement.classList.add('photo-missing');">
-
-<div class="project-info">
-<h3>Renovation Works</h3>
-<p>Actual BCS Project</p>
-</div>
-
-</article>
-
-
-<article class="project-card" data-category="renovation">
-
-<img class="project-photo"
-src="1000058870.jpg"
-alt="BCS Interior Project"
-loading="lazy"
-onclick="openModal(this)"
-onerror="this.style.display='none';this.parentElement.classList.add('photo-missing');">
-
-<div class="project-info">
-<h3>Interior Works</h3>
-<p>Actual BCS Project</p>
-</div>
-
-</article>
-
-
-<article class="project-card" data-category="renovation">
-
-<img class="project-photo"
-src="1000058872.jpg"
-alt="BCS Interior Renovation"
-loading="lazy"
-onclick="openModal(this)"
-onerror="this.style.display='none';this.parentElement.classList.add('photo-missing');">
-
-<div class="project-info">
-<h3>Interior Renovation</h3>
-<p>Actual BCS Project</p>
-</div>
-
-</article>
-
-
-<article class="project-card" data-category="renovation">
-
-<img class="project-photo"
-src="1000058874.jpg"
-alt="BCS Fit-Out Project"
-loading="lazy"
-onclick="openModal(this)"
-onerror="this.style.display='none';this.parentElement.classList.add('photo-missing');">
-
-<div class="project-info">
-<h3>Fit-Out Works</h3>
-<p>Actual BCS Project</p>
-</div>
-
-</article>
-
-
-<article class="project-card" data-category="renovation">
-
-<img class="project-photo"
-src="1000066932.jpg"
-alt="BCS Commercial Fit-Out"
-loading="lazy"
-onclick="openModal(this)"
-onerror="this.style.display='none';this.parentElement.classList.add('photo-missing');">
-
-<div class="project-info">
-<h3>Commercial Fit-Out</h3>
-<p>Actual BCS Project</p>
-</div>
-
-</article>
-
-
-<article class="project-card" data-category="renovation">
-
-<img class="project-photo"
-src="1000066947.jpg"
-alt="BCS Interior Construction"
-loading="lazy"
-onclick="openModal(this)"
-onerror="this.style.display='none';this.parentElement.classList.add('photo-missing');">
-
-<div class="project-info">
-<h3>Interior Construction</h3>
-<p>Actual BCS Project</p>
-</div>
-
-</article>
-
-
-<article class="project-card" data-category="renovation">
-
-<img class="project-photo"
-src="1000066961.jpg"
-alt="BCS Commercial Project"
-loading="lazy"
-onclick="openModal(this)"
-onerror="this.style.display='none';this.parentElement.classList.add('photo-missing');">
-
-<div class="project-info">
-<h3>Commercial Works</h3>
-<p>Actual BCS Project</p>
-</div>
-
-</article>
-
-
-<article class="project-card" data-category="metal">
-
-<img class="project-photo"
-src="1000066990.jpg"
-alt="BCS Metal Works"
-loading="lazy"
-onclick="openModal(this)"
-onerror="this.style.display='none';this.parentElement.classList.add('photo-missing');">
-
-<div class="project-info">
-<h3>Metal Works</h3>
-<p>Actual BCS Project</p>
-</div>
-
-</article>
-
-
-<article class="project-card" data-category="metal">
-
-<img class="project-photo"
-src="1000066955.jpg"
-alt="BCS Metal Fabrication"
-loading="lazy"
-onclick="openModal(this)"
-onerror="this.style.display='none';this.parentElement.classList.add('photo-missing');">
-
-<div class="project-info">
-<h3>Metal Fabrication</h3>
-<p>Actual BCS Project</p>
-</div>
-
-</article>
-
-
-<article class="project-card" data-category="renovation">
-
-<img class="project-photo"
-src="1000067018.jpg"
-alt="BCS Renovation Project"
-loading="lazy"
-onclick="openModal(this)"
-onerror="this.style.display='none';this.parentElement.classList.add('photo-missing');">
-
-<div class="project-info">
-<h3>Renovation Works</h3>
-<p>Actual BCS Project</p>
-</div>
-
-</article>
-
-
-<article class="project-card" data-category="painting">
-
-<img class="project-photo"
-src="1000067019.jpg"
-alt="BCS Painting Project"
-loading="lazy"
-onclick="openModal(this)"
-onerror="this.style.display='none';this.parentElement.classList.add('photo-missing');">
-
-<div class="project-info">
-<h3>Painting / Finishing</h3>
-<p>Actual BCS Project</p>
-</div>
-
-</article>
-
-
-<article class="project-card" data-category="renovation">
-
-<img class="project-photo"
-src="1000067023.jpg"
-alt="BCS Renovation and Finishing"
-loading="lazy"
-onclick="openModal(this)"
-onerror="this.style.display='none';this.parentElement.classList.add('photo-missing');">
-
-<div class="project-info">
-<h3>Renovation / Finishing</h3>
-<p>Actual BCS Project</p>
-</div>
-
-</article>
-
-
-<article class="project-card" data-category="renovation">
-
-<img class="project-photo"
-src="1000074558.jpg"
-alt="BCS Commercial Interior Project"
-loading="lazy"
-onclick="openModal(this)"
-onerror="this.style.display='none';this.parentElement.classList.add('photo-missing');">
-
-<div class="project-info">
-<h3>Commercial Interior</h3>
-<p>Actual BCS Project</p>
-</div>
-
-</article>
-
-
-</div>
-
-<div class="photo-note">
-Project photographs shown are actual BCS project photographs.
-Additional project photographs may be added as the portfolio grows.
-</div>
-
-</div>
-
 </section>
-
-
-<!-- =========================
-     PRE-TURNOVER INSPECTION
-========================= -->
 
 <section id="inspection" class="inspection">
-
 <div class="container">
-
 <div class="inspection-header">
-
-<h2>
-PRE-TURNOVER <span>INSPECTION SERVICE</span>
-</h2>
-
-<p>
-Practical visual inspection support for property owners
-and clients.
-</p>
-
+<h2>PRE-TURNOVER <span>INSPECTION SERVICE</span></h2>
+<p>Practical visual inspection support for property owners and clients.</p>
 </div>
 
-
-<div class="inspection-grid">
-
+<div class="two-col">
 
 <div class="inspection-card">
-
-<h3>
-Inspection Coverage
-</h3>
-
+<h3>Inspection Coverage</h3>
 <ul>
-
-<li>
-Visible wall and ceiling defects
-</li>
-
-<li>
-Visible water stains and possible leak areas
-</li>
-
-<li>
-Flooring and finishing observations
-</li>
-
-<li>
-Doors and windows
-</li>
-
-<li>
-Visible cracks and construction defects
-</li>
-
-<li>
-General workmanship observations
-</li>
-
-<li>
-Accessible areas requiring attention
-</li>
-
+<li>Visible wall and ceiling defects</li>
+<li>Visible water stains and possible leak areas</li>
+<li>Flooring and finishing observations</li>
+<li>Doors and windows</li>
+<li>Visible cracks and construction defects</li>
+<li>General workmanship observations</li>
+<li>Accessible areas requiring attention</li>
 </ul>
-
 </div>
-
 
 <div class="inspection-card">
-
-<h3>
-Service Scope
-</h3>
-
+<h3>Service Scope</h3>
 <ul>
-
-<li>
-Visual inspection of accessible areas
-</li>
-
-<li>
-Photo documentation of observed conditions
-</li>
-
-<li>
-Identification of visible defects and areas of concern
-</li>
-
-<li>
-Practical observations for property owners and clients
-</li>
-
-<li>
-Basic punch-list style observations
-</li>
-
-<li>
-Inspection report or summary where applicable
-</li>
-
-<li>
-Recommendations for further professional assessment
-when necessary
-</li>
-
+<li>Visual inspection of accessible areas</li>
+<li>Photo documentation of observed conditions</li>
+<li>Identification of visible defects and areas of concern</li>
+<li>Practical observations for property owners and clients</li>
+<li>Basic punch-list style observations</li>
+<li>Inspection report or summary where applicable</li>
+<li>Recommendations for further professional assessment when necessary</li>
 </ul>
-
-</div>
-
-
-</div>
-
-
-<div class="inspection-disclaimer">
-
-<strong>Important:</strong>
-
-This service is a practical visual inspection of
-accessible and visible conditions. It is not a substitute
-for structural certification, architectural certification,
-engineering design, destructive testing, laboratory testing,
-or inspection of concealed conditions. Where required,
-appropriate licensed professionals should be engaged for
-formal engineering or technical certification.
-
 </div>
 
 </div>
 
+<div class="disclaimer">
+<strong>Important:</strong> This service is a practical visual inspection of accessible and visible conditions. It is not a substitute for structural certification, architectural certification, engineering design, destructive testing, laboratory testing, or inspection of concealed conditions. Where required, appropriate licensed professionals should be engaged for formal engineering or technical certification.
+</div>
+</div>
 </section>
-
-
-<!-- =========================
-     CONTACT
-========================= -->
 
 <section id="contact" class="contact">
-
 <div class="container">
-
 <div class="section-title">
-
-<h2>
-CONTACT <span>BCS</span>
-</h2>
-
-<p>
-Tell us about your project and let us help you find
-the right construction solution.
-</p>
-
+<h2>CONTACT <span>BCS</span></h2>
+<p>Tell us about your project and let us help you find the right construction solution.</p>
 </div>
 
-
-<div class="contact-grid">
-
+<div class="two-col">
+<div class="contact-card">
+<h3>Babilonia Construction Services</h3>
+<div class="contact-item"><strong>Mobile / Viber</strong><a href="tel:09957730459">0995 773 0459</a></div>
+<div class="contact-item"><strong>Service Area</strong>Metro Manila & CALABARZON</div>
+<div class="contact-item"><strong>Website</strong><a href="https://bcsconstructionph.com">bcsconstructionph.com</a></div>
+<div class="contact-item"><strong>Ocular Inspection</strong>Free ocular for qualified projects.</div>
+<div class="buttons">
+<a class="btn btn-primary" href="tel:09957730459">Call BCS</a>
+<a class="btn btn-outline" style="border-color:#111;color:#111" href="viber://chat?number=%2B639957730459">Viber Us</a>
+</div>
+</div>
 
 <div class="contact-card">
-
-<h3>
-Babilonia Construction Services
-</h3>
-
-<div class="contact-item">
-
-<strong>Mobile / Viber</strong>
-
-<a href="tel:09957730459">
-0995 773 0459
-</a>
-
-</div>
-
-
-<div class="contact-item">
-
-<strong>Service Area</strong>
-
-Metro Manila & CALABARZON
-
-</div>
-
-
-<div class="contact-item">
-
-<strong>Website</strong>
-
-<a href="https://bcsconstructionph.com">
-bcsconstructionph.com
-</a>
-
-</div>
-
-
-<div class="contact-item">
-
-<strong>Ocular Inspection</strong>
-
-Free ocular for qualified projects.
-
-</div>
-
-
-<div class="contact-buttons">
-
-<a class="btn btn-primary"
-href="tel:09957730459">
-Call BCS
-</a>
-
-<a class="btn btn-outline"
-href="viber://chat?number=%2B639957730459">
-Viber Us
-</a>
-
-</div>
-
-</div>
-
-
-<div class="contact-card">
-
-<h3>
-Request a Project Consultation
-</h3>
-
-<p>
-For construction, waterproofing, renovation,
-structural engineering services, repairs,
-maintenance or specialized construction works,
-contact BCS directly.
-</p>
-
+<h3>Request a Project Consultation</h3>
+<p>For construction, waterproofing, renovation, structural engineering services, repairs, maintenance or specialized construction works, contact BCS directly.</p>
 <br>
-
-<p>
-Please provide the project location, type of work,
-approximate size and photographs when available.
-</p>
-
-<br>
-
-<p>
-Our team can review your initial requirements and
-advise on the appropriate next step.
-</p>
-
+<p>Please provide the project location, type of work, approximate size and photographs when available.</p>
 </div>
-
-
 </div>
-
 </div>
-
 </section>
 
-
-<!-- =========================
-     FOOTER
-========================= -->
-
 <footer>
-
-<div class="container footer-content">
-
-<img
-src="file_00000000fccc81fab192adcf842529a8.png"
-alt="BCS Logo"
-class="footer-logo">
-
-<div class="footer-text">
-
-<strong>BABILONIA CONSTRUCTION SERVICES</strong><br>
-
-Continuing the Service Since 1965<br>
-
-Metro Manila & CALABARZON<br>
-
-0995 773 0459 (Viber)
-
+<div class="container footer">
+<img class="footer-logo" src="file_00000000fccc81fab192adcf842529a8.png" alt="BCS Logo">
+<small><strong>BABILONIA CONSTRUCTION SERVICES</strong><br>Continuing the Service Since 1965<br>Metro Manila & CALABARZON<br>0995 773 0459 (Viber)</small>
+<small>© 2026 Babilonia Construction Services.<br>All Rights Reserved.</small>
 </div>
-
-<div class="footer-text">
-
-© 2026 Babilonia Construction Services.<br>
-All Rights Reserved.
-
-</div>
-
-</div>
-
 </footer>
 
-
-<!-- =========================
-     IMAGE MODAL
-========================= -->
-
-<div class="modal" id="imageModal">
-
-<div class="modal-content">
-
-<div class="modal-close" onclick="closeModal()">
-&times;
+<div class="modal" id="modal">
+<div class="close" onclick="closeModal()">×</div>
+<img id="modalImg" src="" alt="BCS Project">
 </div>
-
-<img id="modalImage" src="" alt="BCS Project">
-
-</div>
-
-</div>
-
-
-<!-- =========================
-     JAVASCRIPT
-========================= -->
 
 <script>
+const data=[
+["1000003110.jpg","Structural Construction","construction structural"],
+["1000003115.jpg","Structural Works","construction structural"],
+["1000003184.jpg","Construction Works","construction structural"],
+["1000003277.jpg","Structural Construction","construction structural"],
+["1000003329.jpg","Structural Works","construction structural"],
+["1000003349.jpg","Construction / Metal Works","construction structural metal"],
+["1000003353.jpg","Structural Works","construction structural"],
+["1000003355.jpg","Construction / Metal Works","construction structural metal"],
+["1000003360.jpg","Construction Works","construction structural"],
+["1000003783.jpg","Structural / Metal Works","construction structural metal"],
+["1000004406.jpg","Ceiling / Electrical Works","electrical ceiling"],
+["1000004531.jpg","Electrical Works","electrical"],
+["1000004534.jpg","Electrical Installation","electrical"],
+["1000005141.jpg","Ceiling Works","ceiling"],
+["1000054430.jpg","Roofing / Waterproofing","waterproofing"],
+["1000050884.jpg","Renovation / Fit-Out","renovation"],
+["1000052714.jpg","Painting / Finishing","painting"],
+["1000052738.jpg","Glass / Aluminum","glass"],
+["1000052748.jpg","Glass / Aluminum / Fit-Out","glass renovation"],
+["1000052749.jpg","Interior Fit-Out","renovation"],
+["1000052720.jpg","Interior Renovation","renovation"],
+["1000053088.jpg","Ceiling / Drywall","ceiling"],
+["1000053104.jpg","Renovation Works","renovation"],
+["1000053295.jpg","Fit-Out Works","renovation"],
+["1000054173.jpg","Metal Fabrication","metal"],
+["1000054574.jpg","Renovation Works","renovation"],
+["1000058870.jpg","Interior Works","renovation"],
+["1000058872.jpg","Interior Renovation","renovation"],
+["1000058874.jpg","Fit-Out Works","renovation"],
+["1000066932.jpg","Commercial Fit-Out","renovation"],
+["1000066947.jpg","Interior Construction","renovation"],
+["1000066948.jpg","Ceiling / Drywall","ceiling"],
+["1000066955.jpg","Metal Fabrication","metal"],
+["1000066961.jpg","Commercial Works","renovation"],
+["1000066990.jpg","Metal Works","metal"],
+["1000067018.jpg","Renovation Works","renovation"],
+["1000067019.jpg","Painting / Finishing","painting"],
+["1000067023.jpg","Renovation / Finishing","renovation"],
+["1000074558.jpg","Commercial Interior","renovation"]
+];
 
-const menuToggle =
-document.getElementById("menuToggle");
+const grid=document.getElementById("projectsGrid");
 
-const navLinks =
-document.getElementById("navLinks");
+data.forEach(p=>{
+const c=document.createElement("article");
+c.className="project";
+c.dataset.cat=p[2];
 
+const i=document.createElement("img");
+i.src=p[0];
+i.alt="BCS "+p[1];
+i.loading="lazy";
+i.onerror=()=>{i.style.display="none";c.classList.add("missing")};
+i.onclick=()=>{if(i.style.display!=="none"){document.getElementById("modalImg").src=i.src;document.getElementById("modal").classList.add("show")}};
 
-menuToggle.addEventListener("click",function(){
+const info=document.createElement("div");
+info.className="project-info";
+info.innerHTML="<h3>"+p[1]+"</h3><p>Actual BCS Project</p>";
 
-navLinks.classList.toggle("show");
-
+c.appendChild(i);
+c.appendChild(info);
+grid.appendChild(c);
 });
 
-
-document.querySelectorAll(".nav-links a").forEach(function(link){
-
-link.addEventListener("click",function(){
-
-navLinks.classList.remove("show");
-
+document.querySelectorAll(".filter").forEach(b=>{
+b.onclick=()=>{
+document.querySelectorAll(".filter").forEach(x=>x.classList.remove("active"));
+b.classList.add("active");
+const f=b.dataset.f;
+document.querySelectorAll(".project").forEach(c=>{
+c.style.display=f==="all"||c.dataset.cat.split(" ").includes(f)?"":"none";
+});
+};
 });
 
+document.getElementById("menu").onclick=()=>{
+document.getElementById("nav").classList.toggle("show");
+};
+
+document.querySelectorAll(".nav-links a").forEach(a=>{
+a.onclick=()=>document.getElementById("nav").classList.remove("show");
 });
-
-
-const filterButtons =
-document.querySelectorAll(".filter-btn");
-
-const projectCards =
-document.querySelectorAll(".project-card");
-
-
-filterButtons.forEach(function(button){
-
-button.addEventListener("click",function(){
-
-filterButtons.forEach(function(btn){
-btn.classList.remove("active");
-});
-
-button.classList.add("active");
-
-const filter =
-button.getAttribute("data-filter");
-
-projectCards.forEach(function(card){
-
-const categories =
-card.getAttribute("data-category") || "";
-
-if(filter === "all" ||
-categories.split(" ").includes(filter)){
-
-card.style.display = "";
-
-}else{
-
-card.style.display = "none";
-
-}
-
-});
-
-});
-
-});
-
-
-function openModal(image){
-
-if(!image || image.style.display === "none"){
-return;
-}
-
-const modal =
-document.getElementById("imageModal");
-
-const modalImage =
-document.getElementById("modalImage");
-
-modalImage.src = image.src;
-
-modal.classList.add("show");
-
-}
-
 
 function closeModal(){
-
-document
-.getElementById("imageModal")
-.classList.remove("show");
-
+document.getElementById("modal").classList.remove("show");
 }
 
-
-document
-.getElementById("imageModal")
-.addEventListener("click",function(event){
-
-if(event.target === this){
-
-closeModal();
-
-}
-
-});
-
-
-document.addEventListener("keydown",function(event){
-
-if(event.key === "Escape"){
-
-closeModal();
-
-}
-
-});
-
+document.getElementById("modal").onclick=e=>{
+if(e.target.id==="modal")closeModal();
+};
 </script>
 
 </body>
